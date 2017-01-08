@@ -19,7 +19,7 @@ function solution($N, $A)
         }
     }
 
-    foreach ($results as $k => &$v) {
+    foreach ($results as &$v) {
         $v = max($v, $last_max_counter);
     }
 
